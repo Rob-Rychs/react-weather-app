@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { Component } from 'react';
+import ZipForm from './zipForm';
 
 class App extends React.Component {
   render() {
     return (
       <div className='app'>
-        <p>Scotch School rocks!</p>
+        <ZipForm />
       </div>
     );
   }
