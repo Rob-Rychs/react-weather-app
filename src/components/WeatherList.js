@@ -15,7 +15,7 @@ class WeatherList extends Component {
             index={index}
             onDayClicked={onDayClicked}
           />
-        )};
+        )}
       </div>
     );
   }
