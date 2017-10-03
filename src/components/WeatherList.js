@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import WeatherListItem from './WeatherListItem';
 
-function WeatherList(props) {
-  const { days, onDayClicked } = props;
-  
-  return <div className="weather-list flex-parent">
+const WeatherList = ({ days, onDayClicked }) => 
+  <div className="weather-list flex-parent">
     {days.map((day, index) =>
       <WeatherListItem
         key={day.dt}
@@ -14,6 +12,6 @@ function WeatherList(props) {
       />
     )}
   </div>; 
-}
+
 
 export default WeatherList;
